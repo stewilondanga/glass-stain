@@ -63,59 +63,59 @@ function buildRow(width, height, row) {
     buildCenterRow(width, height, row);
   }
 }
-/*
+
 function buildEdgeRow(width, row) {
-	for (let i = 0; i < width - 2; i++) {
-		let cell = row.insertCell();
+  for (let i = 0; i < width - 2; i++) {
+    let cell = row.insertCell();
 
-		if (cell.cellIndex % 2 === 0) {
-			cell.classList.add("eucalyptus");
-		} else {
-			cell.classList.add("tepapa");
-		}
-	}
+    if (cell.cellIndex % 2 === 0) {
+      cell.classList.add("eucalyptus");
+    } else {
+      cell.classList.add("tepapa");
+    }
+  }
+  /*
+  	cell = row.insertCell(-1);
+  	cell.classList.add("mexican-red");
+  	cell = row.insertCell(0);
+  	cell.classList.add("mexican-red");
 
-	cell = row.insertCell(-1);
-	cell.classList.add("mexican-red");
-	cell = row.insertCell(0);
-	cell.classList.add("mexican-red");
+  	return row;
+  }
 
-	return row;
-}
+  function buildCenterRow(width, height, row) {
+  	let cellCount = 0;
 
-function buildCenterRow(width, height, row) {
-	let cellCount = 0;
+  	for (let i = 0; i < width - 2; i++) {
+  		if (cellCount < width - 2) {
+  			let cell = row.insertCell();
+  			let fill = fillColors[Math.floor(Math.random() * fillColors.length)];
+  			cell.classList.add(fill.class);
 
-	for (let i = 0; i < width - 2; i++) {
-		if (cellCount < width - 2) {
-			let cell = row.insertCell();
-			let fill = fillColors[Math.floor(Math.random() * fillColors.length)];
-			cell.classList.add(fill.class);
+  			let colSpan = Math.floor(Math.random() * (fill.maxCol - 1 + 1)) + 1;
+  			let rowSpan = Math.floor(Math.random() * (fill.maxRow - 1 + 1)) + 1;
 
-			let colSpan = Math.floor(Math.random() * (fill.maxCol - 1 + 1)) + 1;
-			let rowSpan = Math.floor(Math.random() * (fill.maxRow - 1 + 1)) + 1;
+  			if (cellCount + colSpan > width - 2) {
+  				colSpan = width - 2 - cellCount;
+  			}
 
-			if (cellCount + colSpan > width - 2) {
-				colSpan = width - 2 - cellCount;
-			}
+  			// cell.rowSpan = rowSpan;
+  			cell.colSpan = colSpan;
+  			cellCount += colSpan;
+  		}
+  	}
 
-			// cell.rowSpan = rowSpan;
-			cell.colSpan = colSpan;
-			cellCount += colSpan;
-		}
-	}
+  	if (row.rowIndex % 2 === 0) {
+  		cell = row.insertCell(-1);
+  		cell.classList.add("tepapa");
+  		cell = row.insertCell(0);
+  		cell.classList.add("tepapa");
+  	} else {
+  		cell = row.insertCell(-1);
+  		cell.classList.add("eucalyptus");
+  		cell = row.insertCell(0);
+  		cell.classList.add("eucalyptus");
+  	}
 
-	if (row.rowIndex % 2 === 0) {
-		cell = row.insertCell(-1);
-		cell.classList.add("tepapa");
-		cell = row.insertCell(0);
-		cell.classList.add("tepapa");
-	} else {
-		cell = row.insertCell(-1);
-		cell.classList.add("eucalyptus");
-		cell = row.insertCell(0);
-		cell.classList.add("eucalyptus");
-	}
-
-	return row;
-}
+  	return row;
+  }

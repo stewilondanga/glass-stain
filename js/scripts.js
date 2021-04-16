@@ -45,17 +45,17 @@ function initScene() {
 
   buildTable(borderWidth, borderHeight);
 }
-/*
+
 function buildTable(width, height) {
-	//create rows based on height
-	for (let i = 0; i < height; i++) {
-		let row = table.insertRow();
+  //create rows based on height
+  for (let i = 0; i < height; i++) {
+    let row = table.insertRow();
 
-		buildRow(width, height, row);
-	}
-	table.hidden = false;
+    buildRow(width, height, row);
+  }
+  table.hidden = false;
 }
-
+/*
 function buildRow(width, height, row) {
 	if (row.rowIndex === 0 || row.rowIndex === height - 1) {
 		buildEdgeRow(width, row);

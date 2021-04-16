@@ -98,24 +98,24 @@ function buildCenterRow(width, height, row) {
       if (cellCount + colSpan > width - 2) {
         colSpan = width - 2 - cellCount;
       }
-      /*
-                      			// cell.rowSpan = rowSpan;
-                      			cell.colSpan = colSpan;
-                      			cellCount += colSpan;
-                      		}
-                      	}
 
-                      	if (row.rowIndex % 2 === 0) {
-                      		cell = row.insertCell(-1);
-                      		cell.classList.add("tepapa");
-                      		cell = row.insertCell(0);
-                      		cell.classList.add("tepapa");
-                      	} else {
-                      		cell = row.insertCell(-1);
-                      		cell.classList.add("eucalyptus");
-                      		cell = row.insertCell(0);
-                      		cell.classList.add("eucalyptus");
-                      	}
+      // cell.rowSpan = rowSpan;
+      cell.colSpan = colSpan;
+      cellCount += colSpan;
+    }
+  }
+  /*
+                        	if (row.rowIndex % 2 === 0) {
+                        		cell = row.insertCell(-1);
+                        		cell.classList.add("tepapa");
+                        		cell = row.insertCell(0);
+                        		cell.classList.add("tepapa");
+                        	} else {
+                        		cell = row.insertCell(-1);
+                        		cell.classList.add("eucalyptus");
+                        		cell = row.insertCell(0);
+                        		cell.classList.add("eucalyptus");
+                        	}
 
-                      	return row;
-                      }
+                        	return row;
+                        }

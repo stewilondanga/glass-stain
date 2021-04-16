@@ -29,11 +29,11 @@ const fillColors = [{
     maxRow: 1
   }
 ];
-/*
-document.addEventListener("DOMContentLoaded", function() {
-	initScene();
-});
 
+document.addEventListener("DOMContentLoaded", function() {
+  initScene();
+});
+/*
 function initScene() {
 	var table = document.getElementById("table");
 	table.innerHtml = "";

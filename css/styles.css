@@ -105,8 +105,6 @@
   transition-delay: 0.4s;
 }
 
-/*
-
 .container {
   background: #222;
   display: flex;
@@ -117,6 +115,7 @@
   height: 100vh;
 }
 
+/*
 table {
   background-clip: content-box;
   background-image: url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=41b76e31f53140da3f61eb2210e5517f);

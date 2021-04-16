@@ -74,15 +74,15 @@ function buildEdgeRow(width, row) {
       cell.classList.add("tepapa");
     }
   }
-  /*
-  	cell = row.insertCell(-1);
-  	cell.classList.add("mexican-red");
-  	cell = row.insertCell(0);
-  	cell.classList.add("mexican-red");
 
-  	return row;
-  }
+  cell = row.insertCell(-1);
+  cell.classList.add("mexican-red");
+  cell = row.insertCell(0);
+  cell.classList.add("mexican-red");
 
+  return row;
+}
+/*
   function buildCenterRow(width, height, row) {
   	let cellCount = 0;
 

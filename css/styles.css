@@ -140,14 +140,15 @@ td {
   background-clip: padding-box;
 }
 
-/*
 @-moz-document url-prefix() {
+
   th,
-td {
+  td {
     background-clip: padding-box;
   }
 }
-.irish-coffee {
+
+/*.irish-coffee {
   background-color: rgba(103, 40, 40, 0.75);
 }
 

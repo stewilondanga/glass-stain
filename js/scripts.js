@@ -33,19 +33,19 @@ const fillColors = [{
 document.addEventListener("DOMContentLoaded", function() {
   initScene();
 });
-/*
+
 function initScene() {
-	var table = document.getElementById("table");
-	table.innerHtml = "";
-	table.hidden = true;
+  var table = document.getElementById("table");
+  table.innerHtml = "";
+  table.hidden = true;
 
-	let borderUnit = 50;
-	let borderWidth = Math.floor(window.innerWidth / borderUnit);
-	let borderHeight = Math.floor(window.innerHeight / borderUnit);
+  let borderUnit = 50;
+  let borderWidth = Math.floor(window.innerWidth / borderUnit);
+  let borderHeight = Math.floor(window.innerHeight / borderUnit);
 
-	buildTable(borderWidth, borderHeight);
+  buildTable(borderWidth, borderHeight);
 }
-
+/*
 function buildTable(width, height) {
 	//create rows based on height
 	for (let i = 0; i < height; i++) {

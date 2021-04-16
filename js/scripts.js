@@ -6,31 +6,30 @@ var navigate = (function() {
     $('.' + dataName).toggle();
   });
 })();
-/*
-const borderColors = ["eucalyptus", "tepapa"];
-const fillColors = [
-	{
-		class: "romance",
-		maxCol: 4,
-		maxRow: 4
-	},
-	{
-		class: "persian-blue",
-		maxCol: 2,
-		maxRow: 2
-	},
-	{
-		class: "galliano",
-		maxCol: 2,
-		maxRow: 1
-	},
-	{
-		class: "irish-coffee",
-		maxCol: 1,
-		maxRow: 1
-	}
-];
 
+const borderColors = ["eucalyptus", "tepapa"];
+const fillColors = [{
+    class: "romance",
+    maxCol: 4,
+    maxRow: 4
+  },
+  {
+    class: "persian-blue",
+    maxCol: 2,
+    maxRow: 2
+  },
+  {
+    class: "galliano",
+    maxCol: 2,
+    maxRow: 1
+  },
+  {
+    class: "irish-coffee",
+    maxCol: 1,
+    maxRow: 1
+  }
+];
+/*
 document.addEventListener("DOMContentLoaded", function() {
 	initScene();
 });

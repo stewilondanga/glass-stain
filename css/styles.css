@@ -126,7 +126,6 @@ table {
   margin: 0;
 }
 
-/*
 th,
 td {
   border: 6px solid #222;
@@ -135,6 +134,7 @@ td {
   filter: saturate(175%);
 }
 
+/*
 _:-ms-lang(x),
 th,
 td {

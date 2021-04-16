@@ -91,31 +91,31 @@ function buildCenterRow(width, height, row) {
       let cell = row.insertCell();
       let fill = fillColors[Math.floor(Math.random() * fillColors.length)];
       cell.classList.add(fill.class);
+
+      let colSpan = Math.floor(Math.random() * (fill.maxCol - 1 + 1)) + 1;
+      let rowSpan = Math.floor(Math.random() * (fill.maxRow - 1 + 1)) + 1;
       /*
-          			let colSpan = Math.floor(Math.random() * (fill.maxCol - 1 + 1)) + 1;
-          			let rowSpan = Math.floor(Math.random() * (fill.maxRow - 1 + 1)) + 1;
+                			if (cellCount + colSpan > width - 2) {
+                				colSpan = width - 2 - cellCount;
+                			}
 
-          			if (cellCount + colSpan > width - 2) {
-          				colSpan = width - 2 - cellCount;
-          			}
+                			// cell.rowSpan = rowSpan;
+                			cell.colSpan = colSpan;
+                			cellCount += colSpan;
+                		}
+                	}
 
-          			// cell.rowSpan = rowSpan;
-          			cell.colSpan = colSpan;
-          			cellCount += colSpan;
-          		}
-          	}
+                	if (row.rowIndex % 2 === 0) {
+                		cell = row.insertCell(-1);
+                		cell.classList.add("tepapa");
+                		cell = row.insertCell(0);
+                		cell.classList.add("tepapa");
+                	} else {
+                		cell = row.insertCell(-1);
+                		cell.classList.add("eucalyptus");
+                		cell = row.insertCell(0);
+                		cell.classList.add("eucalyptus");
+                	}
 
-          	if (row.rowIndex % 2 === 0) {
-          		cell = row.insertCell(-1);
-          		cell.classList.add("tepapa");
-          		cell = row.insertCell(0);
-          		cell.classList.add("tepapa");
-          	} else {
-          		cell = row.insertCell(-1);
-          		cell.classList.add("eucalyptus");
-          		cell = row.insertCell(0);
-          		cell.classList.add("eucalyptus");
-          	}
-
-          	return row;
-          }
+                	return row;
+                }

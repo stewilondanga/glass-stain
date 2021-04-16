@@ -134,13 +134,13 @@ td {
   filter: saturate(175%);
 }
 
-/*
 _:-ms-lang(x),
 th,
 td {
   background-clip: padding-box;
 }
 
+/*
 @-moz-document url-prefix() {
   th,
 td {

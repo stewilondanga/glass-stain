@@ -55,15 +55,15 @@ function buildTable(width, height) {
   }
   table.hidden = false;
 }
-/*
-function buildRow(width, height, row) {
-	if (row.rowIndex === 0 || row.rowIndex === height - 1) {
-		buildEdgeRow(width, row);
-	} else {
-		buildCenterRow(width, height, row);
-	}
-}
 
+function buildRow(width, height, row) {
+  if (row.rowIndex === 0 || row.rowIndex === height - 1) {
+    buildEdgeRow(width, row);
+  } else {
+    buildCenterRow(width, height, row);
+  }
+}
+/*
 function buildEdgeRow(width, row) {
 	for (let i = 0; i < width - 2; i++) {
 		let cell = row.insertCell();
